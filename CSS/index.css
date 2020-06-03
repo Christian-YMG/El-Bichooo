@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url(../IMG/el\ bichooo.jpg);
+    background-position: top center;
+    background-size: 160%;
+    background-repeat: no-repeat;
+}
+
+.title{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 80px;
+    font-weight: bold;
+    transform: scale(1);
+    animation-name: title;
+    animation-duration: 2s;
+}
+
+.description{
+    width:360px;
+    font-size: 40px;
+    color: rgba(35, 88, 35, 0.5);
+    position: absolute;
+    right: 2%;
+    top: 25%;
+    font-weight: bold;
+    transform: scale(1);
+    animation-name: description;
+    animation-duration: 5s;
+}
+
+.resaltado{
+    width: 400px;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: scale(1);
+    animation-name: resaltado;
+    animation-duration: 7s;
+}
+
+.siiuuuu{
+    width: 400px;
+    font-size: 68px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 2%;
+    transform: scale(1);
+    animation-name: siiuuuu;
+    animation-duration: 3s;
+}
+
+@keyframes title{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    50%{
+        opacity: .5;
+        transform: scale(1.1);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes description{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+        transform: translateX(-100%);
+    }
+
+    50%{
+        opacity: .5;
+        transform: scale(1.1);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes resaltado{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+        transform: translateY(-150%);
+    }
+
+    50%{
+        opacity: .5;
+        transform: scale(1.1);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes siiuuuu{
+    0%{
+        opacity: 0;
+        transform: scale(1.2);
+        transform: translateY(-100%);
+        transform: rotate(0deg);
+    }
+
+    50%{
+        opacity: .5;
+        transform: scale(1.5);
+        transform: rotate(360deg);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        transform: rotate(360deg);
+    }
+}
